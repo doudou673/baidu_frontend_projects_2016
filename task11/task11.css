@@ -1,0 +1,171 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+#main{
+  margin: 20px;
+}
+table{
+  border: none;
+}
+thead{
+  background-color: black;
+  color: white;
+  text-align: left;
+}
+td{
+  padding-right: 2em;
+}
+tr:nth-child(2n){
+  background-color: #cccccc;
+}
+tbody tr:nth-child(-n+3){
+  color: red;
+}
+
+input{
+  margin: 50px 10px;
+  width: 100px;
+  transition: width .5s;
+}
+
+input:focus{
+  width: 200px;
+}
+
+#banner{
+  width: 400px;
+  height: 200px;
+  overflow: hidden;
+}
+li{
+  margin: 0;
+  height: 200px;
+  width: 400px;
+  background-color: red;
+  list-style: none;
+  float: left;
+}
+li:nth-child(2){
+  background-color: chartreuse;
+}
+li:nth-child(3){
+  background-color: coral;
+}
+
+li:nth-child(4){
+  background-color: red;
+}
+
+ul{
+  animation: liu 5s infinite;
+  width: 400%;
+}
+
+@keyframes liu{
+  0%{
+    transform: translateX(0);
+  }
+  33%{
+    transform: translateX(-400px);
+  }
+  66%{
+    transform: translateX(-800px);
+  }
+  100%{
+    transform: translateX(-1200px);
+  }
+}
+.banner2 {
+  margin: 20px;
+  width: 250px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  background-color: red;
+}
+
+.banner2 ul {
+  margin: 0;
+  padding: 0;
+}
+
+.banner2 li {
+  display: block;
+}
+.sliders {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  animation: .5s slider-init linear;
+}
+
+.sliders li {
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: .5s slider-out linear;
+}
+
+#slider-1 {
+  background-color: red;
+}
+
+#slider-2 {
+  background-color: green;
+}
+
+#slider-3 {
+  background-color: blue;
+}
+
+.sliders li:target {
+  left: 0%;
+  animation: .5s slider-in linear;
+}
+
+@keyframes slider-init {
+  0% {
+    left: -100%
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes slider-out {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes slider-in {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.btns {
+  z-index: 100;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+
+.btns a {
+  display: block;
+  margin: 0 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  text-decoration: none;
+  padding: 10px 14px;
+}

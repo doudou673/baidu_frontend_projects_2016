@@ -1,0 +1,32 @@
+body{
+  margin: 0;
+}
+#main{
+  width: 100%;
+  height: 1280px;
+}
+.inner{
+  margin: 10px;
+  border: 1px solid black;
+  background-color: #cccccc;
+  height: 78px;
+}
+.col-12,.col-8,.col-6,.col-4,.col-2{
+  float: left;
+  height: 100px;
+}
+.col-12{
+  width: 50%;
+}
+.col-8{
+  width: 33.3333%;
+}
+.col-6{
+  width: 25%;
+}
+.col-4{
+  width: 16.6666%;
+}
+.col-2{
+  width: 8.33333%;
+}

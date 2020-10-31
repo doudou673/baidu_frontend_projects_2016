@@ -1,0 +1,38 @@
+#main{
+  margin: 30px;
+  border: 1px solid black;
+  min-height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#main div{
+  width: 150px;
+  border: 1px solid red;
+  
+}
+
+.col1{
+  height: 120px;
+}
+
+.col2{
+  height: 100px;
+}
+
+.col3{
+  height: 40px;
+}
+
+.col4{
+  height: 200px;
+}
+
+@media (max-width:723px){
+  .col4{
+    order: -1;
+  } 
+}
